@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+:root{
+    --mainbgcolor: hsl(222, 26%, 31%);
+    --mainbg1color: hsl(0, 0%, 90%);
+    --mainbg2color: hsl(268, 75%, 9%);
+}
+body{
+    background-color:var(--mainbgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body.active1{
+    background-color: var(--mainbg1color);
+}
+body.active1 .btn{
+    background-color:hsl(0, 5%, 81%) ;
+}
+body.active1 #screen{
+    background-color:hsl(0, 0%, 93%);
+    border: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%)
+}
+body.active1 .reset{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(185, 58%, 25%);
+}
+body.active1 .del{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(185, 58%, 25%);
+}
+body.active1 .equal{
+    background-color:hsl(25, 98%, 40%) ;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(25, 99%, 27%) ;
+}
+body.active1 #circle{
+    background-color: hsl(25, 98%, 40%) ;
+}
+body.active1 .toggle p{
+    color:hsl(60, 10%, 19%) ;
+}
+body.active1 .toggle h3{
+    color:hsl(60, 10%, 19%) ;
+}
+body.active1 .control p{
+    color:hsl(60, 10%, 19%) ;
+}
+body.active1 .box {
+    background-color:hsl(0, 5%, 81%) ;
+}
+
+body.active2{
+    background-color: var(--mainbg2color) ;
+}
+body.active2 .btn{
+    background-color:hsl(268, 71%, 12%) ;
+}
+body.active2 #screen{
+    background-color:hsl(268, 71%, 12%);
+    border: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+body.active2 .reset{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(285, 91%, 52%);
+}
+body.active2 .del{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(285, 91%, 52%);
+}
+body.active2 .equal{
+    background-color:hsl(176, 100%, 44%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(177, 92%, 70%);
+    color: black;
+}
+body.active2 #circle{
+    background-color: hsl(176, 100%, 44%);
+}
+body.active2 .toggle p{
+    color:hsl(52, 100%, 62%);
+}
+body.active2 .toggle h3{
+    color: hsl(52, 100%, 62%);
+}
+body.active2 .control p{
+    color:hsl(52, 100%, 62%);
+}
+body.active2 .num {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(290, 70%, 36%);
+}
+
+h3 {
+    color: white;
+}
+
+.toggle{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.toggle p {
+    margin: 0 5px;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.control{
+    display:flex;
+    justify-content: flex-end;
+}
+.control p{
+    font-size: 10px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    color: #FFF;
+    position: relative;
+    cursor: pointer;
+    float: right;
+}
+
+.control .box{
+	width: 74px;
+	height: 20px;
+	background-color: hsl(224, 36%, 15%);
+	border-radius: 30px;
+	position: relative;
+    margin-right: 9px;
+    margin-top: -4px;
+}
+
+.control #circle{
+	width: 16px;
+	height: 16px;
+    background-color:hsl(6, 63%, 50%);
+    border-radius: 50%;
+    margin-top: 2.3245px;
+    margin-left: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.num-title{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.num-title p{
+    margin-right: 15px; 
+    color: white;
+    font-size: 12px;
+}
+
+.screen {
+    width: 450px;
+}
+
+#screen {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+    border: hsl(224, 36%, 15%);
+    text-align: right;
+    color: white;
+    font-size: 40px;
+}
+
+button{
+    width: 90px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border:hsl(222, 26%, 31%);
+    border-radius: 10px;
+    background-color: hsl(30, 25%, 89%) ;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(28, 16%, 65%);
+    margin: 10px 11px;
+}
+
+
+
+.btn {
+    display: flex;
+    width: 450px;
+    flex-flow: wrap;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 6px 1px;
+}
+
+.big-button {
+    width: 200px;
+}
+
+.reset, .del{
+    background-color: #49D9FC;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(224, 28%, 35%);
+    color: white;
+    font-size: 20px;
+}   
+
+.equal{
+    background-color:hsl(6, 63%, 50%);
+    box-shadow: 0.6px 0.6px 0.6px 0.6px hsl(6, 70%, 34%) ;
+    color: white;
+    font-size: 20px;
+}
+
+.num {
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: hsl(28, 16%, 65%);
+}
